@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/static_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="My Calculater" />
+
+    <TextView
+        android:id="@+id/op1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operand 1: "
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/static_tv"/>
+
+    <EditText
+        android:id="@+id/op1_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter first Operand"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/op1_tv"/>
+
+    <TextView
+        android:id="@+id/op2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operand 2: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/op1_et"/>
+
+    <EditText
+        android:id="@+id/op2_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/op2_tv"
+        android:hint="enter second Operand" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/op2_et"/>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/result_tv"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/subtract_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/add_btn"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/multiply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/subtract_btn"
+        android:text="*"/>
+
+    <Button
+        android:id="@+id/divide_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/multiply_btn"
+        android:text="/"/>
+
+</RelativeLayout>
